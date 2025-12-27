@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>InboxIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <h2>InboxIQ</h2>
+
+    <div class="filters">
+      <button onclick="filter('All')">All</button>
+      <button onclick="filter('Academics')">Academics</button>
+      <button onclick="filter('Events')">Events</button>
+      <button onclick="filter('Mess')">Mess and hostel</button>
+     
+    </div>
+  </aside>
+
+  <!-- MAIL LIST -->
+  <main class="mail-section">
+    <h3>Inbox</h3>
+    <div id="mailList"></div>
+  </main>
+
+  <!-- PREVIEW + DEADLINES -->
+  <section class="preview-section">
+    <h3>Preview</h3>
+    <div id="previewBox">
+      <p style="color:#555">👈 Click any mail to see details here</p>
+
+    </div>
+
+    <h3> Deadlines</h3>
+<div id="autoDeadlines"></div>
+
+   
+  </section>
+
+</div>
+
+<script type="module" src="./js/rawMails.js"></script>
+<script type="module" src="./js/autoTag.js"></script>
+<script type="module" src="./js/seedMails.js"></script>
+<script type="module" src="./js/inbox.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Smart Mail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-page">
+
+  <div class="auth-card">
+    <h2>InboxIQ</h2>
+    <p class="auth-subtitle">Login to continue</p>
+
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+
+    <button id="loginBtn">Login</button>
+
+    <!-- 👇 CREATE ACCOUNT LINK -->
+    <p class="auth-footer">
+      Don’t have an account?
+      <a href="signup.html">sign up</a>
+    </p>
+    
+<p class="auth-subtitle">
+  Declutter your inbox. Never miss a deadline.
+</p>
+    <p id="authMsg"></p>
+  </div>
+
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

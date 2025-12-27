@@ -1,0 +1,215 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+  display: grid;
+  grid-template-columns: 240px 380px 1fr;
+  height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: #020617;
+  padding: 20px;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+  color: #f8fafc;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #0b1a33;
+  border: 1px solid #1e3a8a;
+  color: #e0e7ff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar button:hover {
+  background: #1e40af;
+  border-color: #60a5fa;
+}
+
+/* ===== MAIL LIST ===== */
+.mail-section {
+  background: #020617;
+  padding: 18px;
+  border-right: 1px solid #1e293b;
+  overflow-y: auto;
+}
+
+.mail-section h3 {
+  color: #f8fafc;
+  margin-bottom: 16px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #0f1f3d;
+  border: 1px solid #1e40af;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  background: #162c5b;
+  border-color: #3b82f6;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+
+.card h4 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card small {
+  color: #93c5fd;
+  font-size: 13px;
+}
+
+/* Deadline highlight */
+.card.deadline {
+  border-left: 6px solid #ef4444;
+}
+
+/* ===== PREVIEW ===== */
+.preview-section {
+  background: #020617;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.preview-section h3 {
+  color: #f8fafc;
+  margin-bottom: 12px;
+}
+
+#previewBox {
+  background: #f8fafc;
+  color: #020617;
+  padding: 18px;
+  border-radius: 14px;
+  min-height: 200px;
+}
+
+#previewBox h3,
+#previewBox p {
+  color: #020617;
+}
+
+/* ===== DEADLINES ===== */
+#autoDeadlines {
+  margin-top: 20px;
+}
+
+#autoDeadlines .card {
+  background: #1e3a8a;
+  border-left: 6px solid #ef4444;
+  color: #ffffff;
+}
+
+/* ===== AUTH PAGES ===== */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #020617, #000);
+}
+
+.auth-card {
+  width: 360px;
+  background: #0f1f3d;
+  border: 1px solid #1e40af;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(59,130,246,0.25);
+  text-align: center;
+}
+
+.auth-card h2 {
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  color: #93c5fd;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #1e40af;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.auth-card input::placeholder {
+  color: #94a3b8;
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+.auth-footer {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #c7d2fe;
+}
+
+.auth-footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+#authMsg {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #f87171;
+}
