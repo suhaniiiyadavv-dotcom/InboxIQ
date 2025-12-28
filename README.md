@@ -24,3 +24,6 @@ This project is a functional MVP developed for a hackathon submission and demons
 1-Clone the repository
 2-Open index.html in a browser
 3-Login using Firebase authentication
+
+# note 
+The application is deployed on Netlify. For local execution, Firebase configuration and local server setup are required.
